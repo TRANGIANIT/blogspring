@@ -1,0 +1,228 @@
+body{font-family:Helvetica, Segoe UI; font-size: 14px; line-height: 23px; background: #F1F1F1; min-width:1100px;}
+a:link{text-decoration: none;}
+/***topBarWrap***/
+#topBarWrap{width: 100%; position: fixed; height: 40px; background: #5A5C5B; position: fixed;}
+#topBar{width: 90%; height: 100%; margin: auto;}
+	/*pageLogo*/
+	#pageLogo{width: 100px; float: left; height: 100%;}
+		#pageLogo a{display: block; height: 34px; width: 34px; margin-top: 3px; margin-left: 65px; color: #fff; text-indent: -9999px;
+		background: url("../images/bg/home.png") no-repeat center center; border-radius: 4px;} 
+		#pageLogo a:hover{background: url("../images/bg/home.png") no-repeat center center, rgba(255, 255, 255, 0.05);}
+	/*userBar*/
+	#userBar{width: 250px; height: 100%; float: right;}
+		#user{display:block; text-align: center; width: 160px; float: left; height: 30px; margin: 5px; border-radius: 3px;}
+		#user:hover{background: rgba(255, 255, 255, 0.05);}
+		#userAvatar{width: 24px; height: 24px; border-radius: 1px; box-shadow: 1px 1px 3px #333; margin-top: 3px;}
+		#userName{display: inline-block; color: #fff;  vertical-align:top; padding-left: 8px; padding-top: 4px; font-weight: bold;
+			font-size: 12px;}
+		#option{display: block; width: 30px; height: 30px; text-indent: -9999px; float: left;  border-radius: 3px;
+			background: url("../images/bg/me.png") no-repeat center center; background-size:12px 12px; margin-top: 5px; margin-left: 15px;}
+		#option:hover{background: url("../images/bg/me.png") no-repeat center center, rgba(255, 255, 255, 0.05);
+			background-size:13px 13px;}
+
+		#userBar ul li{position: relative; float: left;}
+		#userBar ul ul{display: none; position: absolute; width: 150px; background: #fff; top:38px; left: -45px; padding: 15px 0;
+			box-shadow: 0 1px 2px #ccc; border: 1px solid #E7E7E7; border-radius: 3px;}
+		#userBar ul li:hover > ul{display: none;}
+		#userBar ul ul li{width: 100%;}
+		#userBar ul ul li a{display: block; text-indent: 20px; color: #333; line-height: 30px;}
+		#userBar ul ul li a:hover{background: #f1f1f1;}
+		#userBar ul ul:before{content: ""; display: block; width: 0; height: 0; position: absolute; top:-8px; left: 66px;
+			border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 8px solid #fff;}
+
+/***ContainerWrap***/
+#containerWrap{width: 100%; padding-top: 50px;}
+/***pageMenuWrap***/
+#pageMenuWrap{width:15%; min-width:210px; height: 100%; padding-left: 2%; margin-bottom: 20px; float: left;}
+	#mainMenu ul li a{display: block; line-height: 45px; margin-top: 10px;  color: #00566D; 
+		font-weight: bold; text-indent: 50px; border:1px solid #E7E7E7;}
+	#mainMenu ul ul{display: none;}
+	#generalMenu{background: url("../images/bg/chart.png") no-repeat 10px center;
+		background-color: #fff;}
+	#postMenu{ background: url("../images/bg/news.png") no-repeat 10px center, url("../images/bg/drop-down.png") no-repeat 170px center; background-color: #fff;}
+	#pageMenu{ background: url("../images/bg/books.png") no-repeat 10px center, url("../images/bg/drop-down.png") no-repeat 170px center; background-color: #fff;}
+	#mediaMenu{ background: url("../images/bg/tv.png") no-repeat 10px center, url("../images/bg/drop-down.png") no-repeat 170px center; background-color: #fff;}
+	#commentMenu{background: url("../images/bg/comment.png") no-repeat 10px center; background-color: #fff;}
+	#userMenu{background: url("../images/bg/users.png") no-repeat 10px center, url("../images/bg/drop-down.png") no-repeat 170px center; background-color: #fff;}
+		#mainMenu ul ul{background: #fff; display: none;}
+		#mainMenu ul ul a{transition:0.2s; display: block; line-height: 40px; color: #00566D; border:none; margin: 0px; color: #444;
+			text-indent: 10px; font-weight: normal;}
+		#mainMenu ul ul a:hover{background: #f7f7f7;}
+		.numOrder{display: inline-block; padding-right: 20px; color: #666; font-size: 11px;}
+		.activated{background-color: #0074A2 !important; color: #fff !important;}
+	#sittingMenu{background: url("../images/bg/setting-icon.png") no-repeat 10px center; background-size:25px 25px; background-color: #fff;}
+/***contentWrap***/
+#contentWrap{width: 78%; float: right; margin-top: 10px; margin-right: 2%;}
+.btn{ height: 35px; border:none; background:#0074A2; color: #fff; cursor: pointer;	margin: 7px; padding: 0 15px;}
+/********************AllPost*******************/
+#allPost{width: 100%; margin-bottom:80px;}
+#postList{width: 100%;  margin: 20px 0; margin-top: 15px;}
+#postList table{width: 100%; border:1px solid #ccc; background: #fff; box-shadow: 0 0 2px #ccc;}
+#postList table th{font-weight: bold; color: #00566D;}
+#postList table th, #postList table td{border-collapse: collapse; border-top:1px solid #ccc;
+	padding: 10px;}
+#postList table tr:nth-child(2n+1){background:#F7F7F7;}
+#postList table td:nth-child(n){text-align: center;}
+#postList table td:nth-child(4){text-align: justify;}
+#postList table td:nth-child(2){text-align: left;}
+#postList table td:nth-child(2) a{color: #00566D;}
+#postList table td:nth-child(n){min-width: 100px;}
+#postList table td:nth-child(1){min-width: 25px; vertical-align: middle;}
+#postList table td:nth-child(7){min-width: 25px;}
+#postList table td:nth-child(8){min-width: 25px;}
+#postList table td:nth-child(8) a{display: block; margin-bottom: 20px; color: #00566D;}
+#postList table td:nth-child(8) a:hover{text-decoration: underline;}
+#postList table th:nth-child(7){background:url("../images/bg/comment.png") no-repeat center center; text-indent: -9999px;}
+#postList table th:nth-child(6){background:url("../images/bg/sort-bg.png") no-repeat right 20px center;}
+#sortByDate{color: #00566D;}
+#sortByDate:hover{text-decoration: underline;}
+.btnRemovePost{cursor: pointer; color: #ccc;}
+#postList table tr:hover .btnRemovePost{color: red;}
+/***tblNav***/
+#tblNav{width: 100%; overflow: hidden; margin-top: 15px;}
+#numsPost{display: inline-block;line-height: 25px;  float: left;}
+#postFilter{float: left; margin: 0 30px;}
+	#postFilter select option{padding: 4px;}
+	#btnPostFilter{border: none; background: #0074A2; color: #fff; padding: 5px 17px; cursor: pointer;}
+#pages{float: right;}
+	#pages a{padding:10px; background: #0074A2; text-align: center; color: #fff;}
+	#currentPage{padding: 5px;}
+#pageForm{display: inline-block;}
+/*******************************categories********************************/
+#categories{width:100%;}
+	#addCat{width: 30%; float: left; margin-top: 20px; margin-bottom: 90px;}
+		.subTtlContent{font-size: 18px;}
+		#catTtlDiv, #catSlugDiv, #catParentDiv, #catDescDiv{width: 100%; margin-top: 20px;}
+			#catTtlDiv label, #catSlugDiv label, #catParentDiv label, #catDescDiv label{display: block; font-size: 16px; line-height: 30px;}
+			#txtCatTtl{width: 95%; font-family: "tahoma"; font-size: 16px; line-height: 30px; padding: 0 2%;
+				color: #333;}
+			#txtCatSlug{width: 95%; font-family: "tahoma"; font-size: 16px; line-height: 30px; padding: 0 2%;
+				color: #333;}
+			#cbbCatParents{padding: 5px; height: 30px; width: 50%;}
+			#cbbCatParents option{padding: 3px;}
+			#tarCatDesc{min-width: 95%; max-width: 95%; min-height: 100px; font-family: tahoma; font-size: 14px; padding: 2%;}
+			#btnAddNewCat{margin: 0; margin-top: 20px;}
+	#viewCat{width: 67%; float: right; margin-top: 20px; margin-bottom: 90px;}
+		#viewCat table{width: 100%; border:1px solid #ccc; background: #fff;  box-shadow: 0 0 2px #ccc;}
+		#viewCat table th{font-weight: bold; color: #00566D;}
+		#viewCat table th, #viewCat table td{border-collapse: collapse; border-top:1px solid #ccc; padding: 10px; vertical-align: middle;}
+		#viewCat table tr:nth-child(2n+1){background:#F7F7F7;}
+		#viewCat table td:nth-child(n){text-align: center;}
+		#viewCat table td:nth-child(1){min-width: 90px;}
+		#viewCat table td:nth-child(2){text-align: justify;}
+		#viewCat table td:nth-child(3){min-width: 60px;}
+		#viewCat table td:nth-child(5){min-width: 60px;}
+		#viewCat table td a{display: inline-block; color: #00566D; margin: 0 5px;}
+		#viewCat table td a:hover{text-decoration: underline;}
+		.btnRemoveCate{cursor: pointer; color: #ccc; margin-left: 5px;}
+		#viewCat table tr:hover .btnRemoveCate{color: red;}
+		.btnRemoveCate:hover{ text-decoration:underline;}
+/*************************Edit Category**************************/
+#editCat{width: 100%; margin-top: 20px; margin-bottom: 90px;}
+	#tblEditCat{width: 100%;}
+		#tblEditCat th{font-weight: bold; text-align: left; width: 290px; font-size: 15px; color: #333;}
+		#tblEditCat th, #tblEditCat td{border-collapse: collapse; padding: 15px 0; border:none; vertical-align: middle;}
+		#txtCatTtlEdit, #txtCatSlugEdit{padding:5px; width:95%; font-family: tahoma; font-size: 15px;}
+		#cbbCatParentsEdit{padding:5px; width: 50%; font-family: tahoma; font-size: 15px;}
+		#tarCatDescEdit{font-family: tahoma; font-size: 15px; min-width: 96%; max-width: 96%; min-height: 100px;}
+		
+/**************************dashboard*************************/
+#dashboard{width: 100%; margin-bottom: 80px;}
+.welcomeTtl{display: block; line-height: 45px; font-size: 19px; color: #333;}
+#glanceDiv{width: 45%; overflow: hidden; background: #fff; border-radius: 3px; border: 1px solid #E8E8E8; padding: 2%; margin-top: 11px;
+	float: left; margin-bottom: 20px;} 
+	.subTtlDashboard{display: block; line-height: 30px; font-size: 18px; color: #333; margin-bottom: 10px;}
+	#glanceDiv ul li a{display: inline-block; color: #00566D; text-indent: 30px; padding: 2px; margin: 1px;}
+
+#statisticsDiv1{width: 45%; overflow: hidden; background: #fff; border-radius: 3px; border: 1px solid #E8E8E8; padding: 2%; margin-top: 11px; float: right; margin-bottom: 20px;} 
+.onPage{display: inline-block; width: 90px; height: 25px; line-height: 25px; color: #333; margin: 2px;}
+.num{display: inline-block; height: 25px; margin-left: 10px; background: #1098CE; text-indent: 10px; color: #fff; line-height: 25px; min-width: 20px; box-shadow: 1px 1px 1px #666;}
+#numTotal{background: #0074A2;}
+
+#statisticsDiv2{width: 96%; overflow: hidden; background: #fff; border-radius: 3px; border: 1px solid #E8E8E8; padding: 2%; margin-top: 11px;}
+	#popPostsView{width: 48%; float: left;}
+	#popPostsView a{display: inline-block; color: #00566D; text-indent:10px; padding: 2px; margin: 5px 0;}
+	.no{display: block; margin-right: 20px; margin-left: 30px; color: #666; line-height: 0; width: 16px; height: 16px; text-align: center; line-height: 16px;
+		 font-size: 12px; border-radius: 10px; border: 1px solid #999; float: left; margin-top: 10px; background: #F1F1F1;}
+	.subTtlStatistics{display: block; line-height: 25px; font-size: 16px; color: #333; text-indent: 30px; margin-top: 10px; margin-bottom: 5px;}
+	
+	#popPostsComment{width: 48%; float: left;}
+	#popPostsComment a{display: inline-block; color: #00566D; text-indent:10px; padding: 2px; margin: 5px 0;}
+	/***footer***/
+	#footerAdmin{width: 100%; height: 40px;}
+#footerAdmin span{color: #666; display: inline-block; margin-left: 20%; line-height: 40px; font-size: 13px; font-style: italic;}
+/*************************************setting***************************************/
+#settingDiv{width:100%; min-height:528px;}
+#loadPostOption{width: 100%; height: auto; overflow: auto; margin-top: 30px;}
+
+#settingTbl{width: 100%;}
+#settingTbl th{font-weight: bold; text-align: left; width: 290px; font-size: 15px; color: #333;}
+#settingTbl th, #settingTbl td{border-collapse: collapse; padding: 15px 0; border:none;}
+
+.txt{width: 400px; padding: 5px;}
+.inputCnt{padding: 5px 0;}
+.inputCnt span{display: inline-block; padding-left: 10px; cursor: pointer;}
+#postsPerPageTtl, #postsLoadTtl{display: inline-block; margin-top: 5px; margin-left: 25px; margin-right: 10px;}
+#postsPerPage, #postsLoad{padding: 5px; width: 60px;}
+#postsLoadTtl{margin-right: 22px;}
+#btnSaveSetting{min-width: 120px;}
+/***************************popUp************************/
+#backgroundPopup {z-index:1; position: fixed; display:none; height:100%; width:100%; background:#474747;
+    top:0px; left:0px;}
+#toPopup {font-family: tahoma; box-shadow: 0 0 20px #666; background: #fff; color: #333333; display: none;
+    font-size: 14px;  width: 94%; height: 88%; position: fixed; top: 6%; z-index: 2; left: 50%; margin-left: -47%;}
+#popUpTtl{width: 100%; height: 50px; border-bottom: 1px solid #f1f1f1; background: #fcfcfc; overflow: hidden; position: absolute; top: 0;}
+#popUpTtl h1{display: block; width: 80%; float: left; height: 100%; margin: 0; font-size: 24px; font-weight: normal; color: #444;	
+	line-height: 50px; text-indent: 25px;}
+	#btnClose{display: block; width: 30px; height: 30px; float: right;margin: 10px; text-indent: -99999px;
+		background: url("../images/bg/close-btn.png") no-repeat center center; cursor: pointer;}
+	#btnClose:hover{background: url("../images/bg/close-btn1.png") no-repeat center center;}
+
+#popUpContent{ width: 100%; position: absolute; top: 51px; bottom: 51px; overflow:auto;}
+	#imagesLib{width: 75%; float: left; min-height: 300px; height: 100%;}
+	#optionImagesLib{width: 25%; float: right; min-height: 300px; height: 100%; background: #F3F3F3;}
+
+	#imagesList{margin: 10px;}
+	#imagesList li{float: left;}
+	.imagesItem{width: 122px; height: 122px; margin: 5px; position: relative; padding: 3px;}
+		.imagesItem img{width: 120px; height: 120px; cursor: pointer; border:1px solid #fff;}
+		.selectedDiv{background: #1E8CBE;}
+
+#endPopUpDiv{width: 100%; height: 50px; border-top: 1px solid #f1f1f1; background: #fcfcfc; bottom: 0; position: absolute;}
+
+#imgDetails{display: block; text-align: center; font-size: 15px; color: #444; margin: 15px;}
+#optionImagesLib img{width: 80%; height: auto; margin: auto; display: block; box-shadow: 0 0 2px #666;}
+	#imgName{display: block; text-align: center; padding: 5px; margin: 10px;  color: #666; font-style: italic;}
+
+#btnSetIll{float: right; line-height: 35px; display:none;}
+
+/******************AddNewPost, EditPost******************/
+	.ttlContent{display: block; line-height: 45px; font-size: 23px; color: #333; text-indent: 20px; border-left: 2px solid #0074A2}
+	#addNewPost, #editPost{width: 100%; margin-bottom: 50px;}
+	#postContent{width: 70%; float: left; margin-bottom: 30px;}
+		#postTtl{width: 100%; margin-top: 20px;}
+			#postTtl label{display: block; font-size: 16px; line-height: 30px;}
+			#txtPostTtl{width: 95%; font-family: "tahoma"; font-size: 19px; line-height: 40px; padding: 0 2%;
+				color: #333;}
+		#postDesc{width: 100%; margin-top: 20px;}
+			#postDesc label{display: block; font-size: 16px; line-height: 30px;}
+			#tarPostDesc{min-width: 95%; max-width: 95%; min-height: 80px; font-family: tahoma; font-size: 14px; padding: 2%;}
+		#postContentBody{width: 100%; margin-top: 20px;}
+			#postContentBody label{display: block; font-size: 16px; line-height: 30px;}
+			#tarPostContentBody{min-width: 95%; max-width: 95%; min-height: 350px; font-family: tahoma; font-size: 14px; padding: 2%;}
+	#postOption{width: 27%; float: right; overflow: hidden;}
+		#categoryDiv{width: 100%; margin-top: 20px;}
+			.postOptionDivTtl{display: block; font-size: 17px; line-height: 30px; border-bottom: 1px solid #ccc; margin-bottom: 20px;}
+		#pulishDiv{width: 100%; margin-top: 20px;}
+			#note{display: block; font-style: italic; text-indent: 7px;}
+		#illustrationDiv{width: 100%; margin-top: 20px;}
+		.btnChoseImgIll{display: inline-block; color: #00566D; margin-bottom: 10px; cursor: pointer;}
+		.btnChoseImgIll img{width:285px; height:auto;}
+	.success{display: block; font-size: 16px; color: #0074A2; margin-top: 10px; text-indent: 20px; border-left: 2px solid #0074A2;}
+	.error{display: block; font-size: 16px; color: #EC8300; margin-top: 10px;text-indent: 20px; border-left: 2px solid #EC8300;}
+	.warning{display: block; font-size: 16px; color: #EC8300; margin-bottom: 5px;}
+	.note{display: inline-block; text-indent: 30px; cursor: pointer;}
+	#imgLib{width:100%; height:200px; background: #fff; overflow: auto; display: none;}
+	#btnSelectIll{display: block; text-align: center; line-height:30px; background: #0074A2; color: #fff; cursor: pointer;
+		margin: 10px;}
+	#btnRemoveImgIll{display: none; color: #00566D; margin-bottom: 10px; cursor: pointer;}

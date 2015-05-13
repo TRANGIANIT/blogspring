@@ -1,0 +1,25 @@
+body{font-family:Segoe UI; font-size: 15px; line-height: 20px;}
+a{text-decoration: none;}
+
+#loginFormWrap{width: 300px; margin: auto; margin-top: 100px; position: relative; padding: 40px; box-shadow: 0 0 7px #666;
+	background: #f1f1f1;}
+#logo{width: 200px; position: absolute; top: -50px; left: -400px;}
+#logo a{display:block; width: 200px; margin: auto; height: 80px; text-indent: -99999px; background: url("../images/bg/logo1.png") no-repeat center center;}
+#headLoginForm{width: 100%; overflow: hidden;}
+	#ttlLoginForm{display: block; font-size: 20px; font-weight: bold; text-align: center; color: #005653;}
+	#err{display: block; font-style: italic; color: #F1A509; line-height: 20px; padding: 10px 0; text-align: center;}
+#loginForm{width: 100%; margin-top: 10px;}
+	#loginForm label{display: inline-block; padding: 5px 0; margin-top: 5px;}
+	#txtEmail{width: 286px; padding: 10px 5px;}
+	#txtPass{width: 286px; padding: 10px 5px;}
+	#btnLogin{transition:0.2s; width: 120px; height: 40px; float: right; margin:20px 0; border: 2px solid #fff; border-radius: 5px;
+	 box-shadow: 0 2px 4px #ccc; cursor: pointer; background: #007F7B; color: #fff;}
+	 #btnLogin:hover{background: #fff; color: #005653;}
+	#forgotPass{display: inline-block; float: left; line-height: 75px; color: #333; color: #F1A509;}
+	#forgotPass:hover{text-decoration: underline;}
+	#message{display: inline-block; color: #F1A509; line-height: 20px; margin-bottom: 5px; margin-left: 10px;}
+#endLoginForm{width: 100%; overflow: hidden;}
+	#endLoginForm a{display: inline-block; color: #333;}
+	#endLoginForm a:hover{text-decoration: underline;}
+	#registerLink{float: left;}
+	#goHomeLink{float: right;}

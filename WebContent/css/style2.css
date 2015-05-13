@@ -1,0 +1,220 @@
+body{font-family:Helvetica, Segoe UI; font-size: 14px; line-height: 20px;}
+a{text-decoration: none;}
+/***topBar***/
+#topBarWrap{width:100%; background: #fff; border-top: 1px solid #f1f1f1;}
+#topBar{width:1200px; height: 80px; margin: auto; position: relative;}
+/*status*/
+#status{transition: 0.3s; position: absolute; width: 15px; height: 15px; border-radius: 50%; background: #ccc; top: 33px; left: -30px; text-indent: -1000px;}
+#status:hover{text-indent: -55px;}
+#status span{display: block; color: #F1A509; text-align: center; line-height: 12px;}
+/*logo*/
+#logo{width: 200px; height: 80px; float: left;}
+#logo a{transition:0.5s; display:block; width: 100%; height: 80px; text-indent: -99999px; 
+	background: url("../images/bg/shine.png") no-repeat -100px -100px, url("../images/bg/logo1.png") no-repeat center center; }
+#logo a:hover{background: url("../images/bg/shine.png") no-repeat 140px 100px, url("../images/bg/logo1.png") no-repeat center center;}
+/*mainNav*/
+#mainNav{width: 900px; height: 80px; float: right;}
+#mainNav ul{float:right; z-index:2000;}
+#mainNav ul li{float: left; position:relative;}
+#mainNav ul li a{display: block; padding: 10px 25px; line-height: 60px; color: #171717;  font-weight: bold;}
+#mainNav ul li a:hover{color: #007F7B;}
+#mainNav ul ul{display: none; position: absolute; width: 150px; top:80%; left: -25%; background: #fff; box-shadow: 0 0 3px #ccc;}
+#mainNav ul li:hover > ul{display: block;}
+#mainNav ul ul li{float: none; text-align: center;}
+#mainNav ul ul li a{z-index:2000;display: block; padding: 10px 25px; line-height: 30px; font-weight: normal; background: #fff;}
+#mainNav ul ul li a:hover {color: #007F7B;}
+#mainNav ul ul ul{z-index:200; left:95%; top:0;}
+/***banner***/
+#banner{position:relative; width: 100%; min-width: 1200px; height: 400px; overflow: hidden;
+	 background: url("../images/bg/banner.jpg") no-repeat center;
+	background-position:0 -200px; background-size: 100%; border-bottom: 3px solid #ccc; border-top: 3px solid #ccc;}
+	#btnLogin{position: absolute; top: 160px; right: 0;   box-shadow: 0 0 4px #333; overflow: hidden;}
+	#btnLogin a{transition:0.2s; display: block; width: 65px; height: 50px; background: #fff;  line-height: 50px; padding: 10px; padding-left: 20px;
+		color: #005653; font-weight: bold; position: relative;}
+	#btnLogin a:hover{ width: 110px; background: #F1A509; }
+		#btnLogin a span{color: #fff;}
+	#btnShowSearchDiv{position: absolute; top: 200px; right: 0;   box-shadow: 0 0 4px #333; overflow: hidden;}
+	#btnShowSearchDiv span{transition:0.2s;  display: block; width: 65px; height: 50px; background: #fff;  line-height: 50px; padding: 10px; padding-left: 20px;
+		color: #005653; font-weight: bold; cursor: pointer;}
+	 #btnShowSearchDiv span:hover{ width: 110px; background: #007F7B; color:#fff;}
+/**searchBox**/
+#searchBoxWrap{width: 100%; min-width: 1200px; height: 120px; background:#fff;}
+#searchBox{width: 1200px; background: #f1f1f1; height: 100%; margin: auto;text-align: center;
+	line-height: 120px; border:1px solid #ccc; border-top:none;}
+#txtSearch{margin: auto; width: 1000px; padding: 0 20px; font-size: 15px; height: 45px; border: 2px solid #ccc;
+	background:#FAFAFA url("../images/bg/search.png") no-repeat center right 20px; margin-top:34px; outline:none;}
+#txtSearch:focus{background:#fff url("../images/bg/enter.png") no-repeat center right 20px;}
+
+#btnToggleSearchBoxWrap{width:1202px; margin:auto; overflow: hidden;} 
+#btnToggleSearchBox{width:150px; height:40px; background: #F1F1F1; float:right;
+	 border:1px solid #ccc; border-top:none; cursor: pointer; }
+	 #btnToggleSearchBox span{display: block; text-align: center; line-height: 40px; color:#666;}
+/***container***/
+#containerWrap{width: 100%; height: auto; min-height: 1000px;}
+/**container**/
+#container{width: 1200px; margin: auto; overflow: hidden; margin-top: 20px;}
+/**content**/
+#content{width: 850px; float: left; overflow: hidden; border-bottom: 1px solid #ededed;}
+/*newPost*/
+#newPost{width: 100%; overflow: hidden;}
+.focus{display: block; font-size: 17px; font-weight: bold; color: #007F7B; padding: 10px; padding-left:45px; line-height: 30px;
+	background: url("../images/bg/focus.png") no-repeat left center; background-size: 35px 35px; margin-bottom: 20px;}
+.post{width: 815px; overflow: hidden; padding: 15px; box-shadow: 0 0 1px #ccc; margin: 2px; margin-bottom: 20px;}
+.postIll{width: 200px; height:200px; margin: 2px; padding: 2px; box-shadow: 0 0 2px #ccc; float: left;}
+.postIll img{width: 100%; height: 100%; border-radius: 4px;}
+
+.postDetail{float: left; width: 575px; padding-left: 20px;}
+.ttlPost a{transition:0.2s; display: inline-block; font-size: 17px; font-weight: bold; color: #005653; margin-left: 40px; padding: 4px 0;}
+.ttlPost a:hover{color: #2ABC8D;}
+.postInfo{padding: 5px 0;}
+.postInfo span{display: block; color: #666; font-style: italic; margin-left: 40px;}
+.postInfo span a{color: #005653;}
+
+.postContent{overflow: hidden; width: 100%; margin: 4px 0;}
+.postContent p{text-indent: 40px; text-align: justify; line-height: 23px;}
+
+.readMore{overflow: hidden; width: 100%; margin-top:10px;}
+.btnReadMore{float: right; display: block; width: 150px; height: 40px; text-align: center; line-height: 40px;
+	color: #005653; border: 1px solid #F2F2F2; background: #fafafa;}
+/*pages*/
+#pages{width: 100%; height: 50px; margin-bottom: 5px;}
+#pages ul li{float: left;}
+#pages ul li a{transition:0.2s; display: block; width: 35px; height: 35px; text-align: center; line-height: 35px; margin: 0 5px;
+	background: #fafafa; border: 2px solid #fff; color: #007F7B; box-shadow: 0 2px 2px #ccc;}
+#pages ul li a:hover{background: #fafafa; color: #007F7B; border: 2px solid #007F7B;}
+#pages ul li span{display: block; width: 35px; height: 35px; text-align: center; line-height: 35px; margin:0 5px; border: 2px solid #007F7B;
+	color: #007F7B; background: #fafafa;}
+/*sidebar*/
+#sidebar{width: 320px; min-height: 500px; float: right; background: #fff  url("../images/bg/map1.png") no-repeat top right;
+	margin-top: 10px; padding-top: 52px;}
+
+/**clock**/
+#clock{width: 250px; height: 250px; position: relative; margin: auto; margin-top: 20px;border-radius: 50%; border: 1px solid #ccc; background: #F1F1F1;}
+.h{position: absolute; display: block; width: 20px; height: 20px; text-align: center; }
+#secWrap{position: absolute; display: block; width: 1px; height:200px; bottom: 25px; left: 125px; z-index: 200;}
+#sec{display: block; width: 1px; height:120px; background: red; box-shadow: 0 0 2px #666;}
+#minWrap{position: absolute; display: block; width: 2px; height:200px; bottom: 25px; left: 124px; z-index: 200;}
+#min{display: block; width: 2px; height:100px;  background: #000; margin-top: 15px; box-shadow: 0 0 1px #666;}
+#hoursWrap{position: absolute; display: block; width: 3px; height:200px; bottom: 25px; left: 124px;  z-index: 200;}
+#hours{display: block; width: 3px; height:80px; background: #000; margin-top: 30px; box-shadow: 0 0 1px #666;}
+#dateWrap{display: block; position: absolute; min-width: 80px; height: 20px; background: #fff; border:1px solid #ccc; bottom:65px; left: 78px;  z-index: 100;
+	box-shadow:inset 0 0 2px #ccc;}
+#day{display: block; width: 25px; height: 100%; line-height: 20px; text-align: center; float: left;} 
+#mon{display: block; width: 25px; height: 100%; line-height: 20px; text-align: center; float: left; border-left: 1px solid #ccc; border-right: 1px solid #ccc;} 
+#year{display: block; width: 40px; height: 100%; line-height: 20px; text-align: center; float: left;}
+#pin{display: block; position: absolute; width: 8px; height: 8px; top: 121px; left: 121px; border-radius: 50%; background: #ccc; z-index: 300; box-shadow: inset 0 0 3px #333;}
+#moment{display: block; width: 30px; height: 30px;  position: absolute; top: 55px; left: 110px; border-radius: 50%;}
+
+#timerWrap{width: 316px; overflow: hidden; border-radius: 5px; margin-bottom: 50px;}
+#ttlTimer{display: block; text-align: center; padding: 10px; margin-top: 20px; height: 20px; line-height: 20px; font-size: 17px;
+	font-weight: bold;}
+#timer{width: 100%;}
+#timer ul{margin-left: 15px;}
+#timer ul li{float: left; margin-top: 30px;}
+#timer ul li .timeBox{width: 55px; height: 80px; margin: 0 20px;}
+
+#timer ul li .timeBox .timeValue{display: block; float: left; width: 100%; height: 50%; border-radius: 5px; background: #007F7B; text-align: center;
+
+	line-height: 40px; color: #fff; font-weight: bold; border: 2px solid #fff; box-shadow: 0 3px 5px #ccc;}
+
+#timer ul li .timeBox .attTime{display: block; float: left; width: 100%; height: 50%; text-align: center; padding-top: 5px;  color: #5E5E5E;}
+
+
+#ttlHotPostSBList{display: block; text-align: center; padding: 10px; height: 50px; line-height: 50px; font-size: 17px;
+	font-weight: bold; background: #F1A509; color: #fff; border: 5px solid #fff; margin: 3px; border-radius: 10px;
+	box-shadow: 0 0 3px #ccc; margin-bottom: 20px; font-weight: bolder;}
+.hotPotsSBItem{width: 296px; height: 70px; overflow: hidden; padding: 10px; border: 1px solid #F2F2F2;
+	margin: 2px 0;}
+.illHotPostSB{width: 66px; height: 66px; float: left; box-shadow: 0 0 1px #ccc; margin: 2px;}
+.illHotPostSB img{width: 62px; height: 62px; border: 2px solid #fff; border-radius: 6px;}
+.ttlHotPostSB{float: left; width: 226px;}
+.ttlHotPostSB h4 a{display: block; padding: 5px; padding-left: 10px; color: #171717; line-height: 18px;}
+.ttlHotPostSB h4 a:hover{color: #005B57;}
+.ttlHotPostSB span{display: block; padding-left: 10px; color: #999; font-size: 13px; font-style: italic;}
+
+#lineEndHotPostSB{display: block; height: 10px; border: 3px solid #fff; background: #F1A509; box-shadow: 0 0 3px #ccc;
+	margin: 3px; border-radius: 8px; margin-top: 20px;}
+
+#likeFBBox{border: 1px solid #F2F2F2; margin-top: 60px; padding: 10px 3px;}
+#ttlLikeFBBox{display: block; text-align: center; padding: 10px; height: 50px; line-height: 50px; font-size: 17px;
+	font-weight: bold; background: #3B5998; color: #fff; border: 5px solid #fff; margin: 3px; border-radius: 10px;
+	box-shadow: 0 0 3px #ccc; margin-bottom: 20px; font-weight: bolder;}
+
+.widget-title{display: block; text-align: center; padding: 10px; height: 50px; line-height: 50px; font-size: 17px;
+	font-weight: bold; background: #F1A509; color: #fff; border: 5px solid #fff; margin: 3px; border-radius: 10px;
+	box-shadow: 0 0 3px #ccc; margin-bottom: 20px; font-weight: bolder; margin-top: 50px;}
+
+#tag_cloud-2 .widget-title{ background: #50BFF7;}
+.tagcloud{padding: 0 15px;}
+.tagcloud a{transition:0.2s; color: #171717;}
+.tagcloud a:hover{color: #F1A509;}
+
+#archives-2  .widget-title{ background: #87C71D;}
+#archives-2 ul{padding: 0 17px;}
+#archives-2 ul li{float: left;}
+#archives-2 ul li a{display: inline-block; border: 3px solid #fff; background: #F1A509; box-shadow: 0 0 3px #ccc;
+	margin: 3px; border-radius: 8px; padding: 10px; color: #fff;}
+
+/***endContainer***/
+.endLine{width: 100%; min-width: 1200px; height: 80px; background: #f1f1f1; margin-top: 40px;}
+/***footer***/
+#footerWrap{width:100%; height: auto; min-width: 1200px; background: #333;}
+#footer{width: 1200px; height: 350px; margin: auto;}
+.footerBlock{width:360px; height: 100%; float: left; padding: 0 20px;}
+.ttlFooterBlock{display: block;  font-size: 17px; color: #2ABC8D; font-weight: bold; margin-top: 50px; margin-bottom: 20px;
+	border-bottom: 1px solid #444; padding-bottom: 10px;}
+#logoFooter{ display:block; width:200px; height:100px;background: url("../images/bg/logo2.png") no-repeat center center;
+	text-indent: -9999px; margin-top: 100px;}
+#slogan{display: block; margin-left: 17px; color: #fff; font-size: 17px;}
+
+#contact ul li a{transition:0.3s; display: block; color: #fff; font-size: 14px; padding: 5px 0;  text-indent: 40px;}
+#tt{background: url("../images/bg/tt.png") no-repeat left center;}
+#fb{background: url("../images/bg/fb.png") no-repeat left center;}
+#yt{background: url("../images/bg/yt.png") no-repeat left center;}
+#yh{background: url("../images/bg/yh.png") no-repeat left center;}
+#gp{background: url("../images/bg/gp.png") no-repeat left center;}
+#gm{background: url("../images/bg/gm.png") no-repeat left center;}
+#ph{background: url("../images/bg/phone.png") no-repeat left center;}
+
+#contact ul li a:hover{color: #F1A509;}
+
+#other p{text-align: justify; color: #fff;}
+#btnContribute{display: block; padding: 10px 0; text-align: center; background: #fff; margin-top: 40px; color: #007F7B;}
+
+#endFooterWrap{width: 100%; height: 50px; background:#171717;}
+#endFooter{width: 1200px; height: 100%; margin: auto;}
+#copyright{color: #fff; line-height: 50px;}
+#link{  float: right; line-height: 50px; color: #fff; }
+#link a{color: #F1A509; display: inline-block; padding: 0 20px; font-size: 16px; font-weight: bold;}
+
+
+/***userBar***/
+#userBarWrap{width:100%; height:30px; background:#5A5C5B;}
+#userBar{width:1200px; margin:auto;}
+#userMenu{float: right; min-width:150px;}
+#userMenu ul li{position:relative;}
+#userName{display:block; padding:5px 10px; color:#fff; font-size:13px; text-align:center;}
+#userMenu ul ul{display: none; position:absolute; top:100%; width:150px; z-index:100; background:#fafafa;
+	box-shadow: 0 0 3px #666; padding:10px 0;}
+#userMenu ul ul:before{content: ""; border-left: 8px solid transparent; border-right: 8px solid transparent;
+	border-bottom:8px solid #fafafa; position: absolute; top:-8px; left: 70px;}
+#userMenu ul li:hover > ul{display: block;}
+#userMenu ul ul li a{display:block; text-align:center; padding:5px 0; background:#fafafa; color:#000;}
+#userMenu ul ul li a:hover{background:#f1f1f1;}
+
+#btnAdPanel{float:left; width:150px; height:100%; overflow:hidden; text-indent: -9999px;}
+#btnAdPanel a{display:block; width: 150px; height:30px; background: url("../images/bg/settings.png") no-repeat center center;
+	background-size:16px 16px;}
+#btnAdPanel a:hover{background: url("../images/bg/settings.png") no-repeat center center; background-size:17px 18px;}
+/******/
+#errorPageWrap{width:100%; text-align: center; margin:auto;}
+#errorTtl{display:block; text-align: center; color: #007F7B; font-size: 25px; margin:50px; margin-top:200px;}
+#backHomeLink{display:block; text-align:center; font-size:17px; text-decoration: none; color: #6C6B6B;
+	padding:20px; width:200px; margin:auto;}
+#goBack{display:block; text-align:center; font-size:17px; text-decoration: none; color: #6C6B6B;
+	padding:20px; width:200px; margin:auto; cursor: pointer;}
+
+#btnToTop{width:50px; height:50px; background:#007F7B; position:fixed; z-index: 3000px; bottom:0; right:0; display:none; color: #fff; line-height:50px;
+	text-align:center; cursor: pointer;}
+
+#loadingPosts{width: 50px; height: 50px; margin:auto;  margin-bottom: 20px; display:none; background: url("../images/bg/load.gif") no-repeat center center}
